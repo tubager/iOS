@@ -395,18 +395,18 @@
 			var fileName = url.substr(url.lastIndexOf("/")+1, url.length-1);
 			var newName = util.getUuid() + "." + fileName.split(".")[1];
 			$cordovaFile.checkFile(oldDir, fileName).then(function(){
-				alert("found " + url);
+				//alert("found " + url);
 			}, function(){
-				alert("not found " + url);
+				//alert("not found " + url);
 			});
 			$cordovaFile.copyFile(oldDir, fileName, cordova.file.dataDirectory + uuid + "/", newName)
 			.then(function (success) {
 				// success
-				alert("file copied");
+				//alert("file copied");
 				data.url = cordova.file.dataDirectory + uuid + "/" + newName;
 				q.resolve(data);
 			}, function (error) {
-				alert(JSON.stringify(error));
+				//alert(JSON.stringify(error));
 				q.reject(error);
 			});
 			return q.promise;
