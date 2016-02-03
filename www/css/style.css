@@ -1,0 +1,59 @@
+/* Empty. Add your own CSS if you like */
+.article-tile{
+	position: relative;
+	max-height: 300px;
+	overflow: hidden;
+}
+.tile-text{
+	position: absolute;
+	background-color:rgba(79,79,79,0.7);
+	width: 100%;
+	bottom: 0px;
+	padding: 10px;
+}
+.tile-title{
+	color:white;
+	font-size: 18px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.tile-sub-title{
+	color:white;
+	text-align: center;
+	font-size: 14px;
+}
+
+/* the FOOT CSS*/
+.short-cut a {
+	text-decoration: none;
+	
+}
+.short-cut{
+	position: relative;
+	height:80px;
+}
+
+[class^="footItem"] {
+	display: inline-block; 
+	width: 49.5%; 
+	padding: 15px 0; 
+	text-align: center; 
+	color: white; 
+	font-size: 1.1em; 
+}
+[class^="footItem"] span { display: block; font-size: 1.6em; margin-bottom: 5px; color: #fff; }
+.footItem1 { background: #33cd5f; position: absolute; left: 0px;}
+.footItem1:hover { background: #5bcee2; }
+.footItem2 { background: #f27935; position: absolute; right: 0px;}
+.footItem2:hover { background: #f6a172; }
+
+.article-list .item-content{
+	padding: 0px;
+}
+.article-list .list{
+	margin-top: 0px;
+}
+.article-list ion-item{
+	margin-top: 5px;
+}

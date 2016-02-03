@@ -1,0 +1,42 @@
+<ion-view>
+	<ion-nav-title>途八哥游记
+		<div id="search-bar" style="display:none;">
+            <div class="item item-input-inset" style="background-color:transparent;border-width:0px;margin-top:0px;padding:0px;">
+                <label class="item-input-wrapper" id="search-input" style="background-color:transparent;border:1px solid white;">
+                    <input type="search" style="width:100%;" placeholder="" ng-model="data.query">
+                </label>
+                <button class="button button-clear ion-search" style="color:white; position:absolute;right:10px;" ng-click="search()"></button>
+            </div>
+        </div>
+	</ion-nav-title>
+  <ion-content class="padding">
+      <ion-slide-box auto-play="true" does-continue="true" slide-interval="2000">
+          <ion-slide ng-repeat="slider in sliders">
+              <div style="">
+                <img ng-src="{{slider.img}}" style="width:100%">
+              </div>
+          </ion-slide>
+      </ion-slide-box>
+	  <div class="short-cut">
+          <a href="#/myarticles" class="footItem1"><span class="entypo-heart icon ion-folder"></span>游记本</a>
+          <a href="#/timeline/current" class="footItem2"><span class="entypo-user icon ion-ios-book"></span>当前游记</a>
+      </div>
+      <ion-list class="article-list">
+          <ion-item class="" ng-repeat="chat in chats" type="item-text-wrap" href="#/viewarticle/{{chat.uuid}}">
+              <div class="">
+                  <div class="article-tile" style="min-height:100px;">
+                      <img class="full-image" src="{{chat.coverImg}}" alt="{{chat.coverImg}}" style="min-height:100px;">
+                      <div class="tile-text">
+	                      <div class="tile-title">
+	                          {{chat.title}}
+	                      </div>
+	                      <div class="tile-sub-title">
+	                      	{{chat.description}}
+	                      </div>
+                      </div>
+                  </div>
+              </div>
+          </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>

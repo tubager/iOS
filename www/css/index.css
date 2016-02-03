@@ -1,0 +1,159 @@
+﻿nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li{
+    float: none;
+    width: 100%;
+}
+
+.li-divider{
+	border-bottom: 1px solid#eee;
+}
+
+.setting-li{
+	font-size:1.5em; 
+	margin-right:25px;
+	position: relative;
+	top: 3px;
+	color:#15D4B5;
+}
+
+nav li a{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    color: #444;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Lato Hairline'), local('Lato-Hairline'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/boeCNmOCCh-EWFLSfVffDg.woff) format('woff');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+}
+
+.unlogin {
+    border-bottom: 1px solid #9D8C7B;
+}
+
+.unlogin img {
+    width: 100%;
+    -webkit-filter: blur(8px);
+    opacity: .7;
+}
+
+.user-img {
+    position: absolute;
+    top: 20px;
+    width: 75px;
+    height: 75px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 5px solid #9F9887;
+    border-radius: 100%;
+	overflow: hidden;
+}
+
+.user-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.login {
+    width: 90px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #15D4B5;
+    color: #FFFFFF;
+	border-width: 0px;
+}
+
+.category {
+    margin-top: 5px;
+    border-bottom: 1px solid #bebebe;
+}
+
+.category li {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    padding: 20px 0 10px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.category li span {
+    margin: 15px 10px 0 10px;
+}
+
+.user-setting li:not(:last-child) {
+    position: relative;
+    padding: 3px 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-image: url("../img/users/arrow_grey_right_normal.png");
+}
+
+.user-setting li:last-child {
+    position: relative;
+    padding: 3px 10px;
+}
+
+.user-setting li:last-child span {
+    padding: 10px 0 10px 50px;
+}
+
+.user-setting li:last-child div {
+    position: absolute;
+    right: 5%;
+    top: 13px;
+    color: #e6e6e6;
+    font-size: 10px;
+}
+
+.user-setting li span {
+    display: block;
+    padding: 10px 50px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 5%;
+}
+
+.profileImg{
+	
+}

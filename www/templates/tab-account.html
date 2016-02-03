@@ -1,0 +1,57 @@
+
+<ion-view  hide-nav-bar="true" style="z-index: 9999" view-title="个人中心">
+  <ion-content class="padding" style="background-color:#eee;">
+	<a id="loginLink" href="#/sign-in" style={{loggedIn?"display:none;":"display:block;"}}>
+		<div class="unlogin">
+		  <img src="img/users/t1.jpg"/>
+		  <button class="login">立即登录</button>
+		</div>
+		<div class="user-img">
+		  <img src="img/users/user_avatar_unlogin@2x.png">
+		</div>
+	</a>
+	<a id="infoLink" href="#/account/profile" style={{loggedIn?"display:block;":"display:none;"}}>
+		<div class="unlogin">
+		  <img class="profileImg" src="img/users/t1.jpg"/>
+		  <button class="login">个人中心</button>
+		</div>
+		<div class="user-img">
+		  <img src="{{img}}">
+		</div>
+	</a>
+    <div class="content">
+		<ion-list>
+			<ion-item class="item item-divider">
+            </ion-item>
+			<ion-item class="item-icon-left" style={{loggedIn?"display:block;":"display:none;"}} ng-click="bookManagement()">
+                游记管理
+                <i class="icon ion-ios-folder-outline" style="font-size:1.5em;color:#15D4B5;"></i>
+            </ion-item>
+			<ion-item class="item-icon-left" style={{loggedIn?"display:block;":"display:none;"}} ng-click="defaultManagement()">
+                设置默认游记
+                <i class="icon ion-ios-book-outline" style="font-size:1.5em;color:#15D4B5;"></i>
+            </ion-item>
+			<ion-item class="item-icon-left" style={{loggedIn?"display:block;":"display:none;"}} ng-click="downloadMyArticle()">
+                同步云端游记
+                <i class="icon ion-ios-loop" style="font-size:1.5em;color:#15D4B5;"></i>
+            </ion-item>
+			<ion-item class="item item-divider" style={{loggedIn?"display:block;":"display:none;"}}>
+            </ion-item>
+			<ion-item class="item-icon-left" ng-click="downloadManagement()">
+                下载管理
+                <i class="icon ion-ios-cloud-download-outline" style="font-size:1.5em;color:#15D4B5;"></i>
+            </ion-item>
+			<ion-item class="item-icon-left" ng-click="cacheClearing()">
+                清除缓存
+                <i class="icon ion-ios-trash-outline" style="font-size:1.5em;color:#15D4B5;"></i>
+            </ion-item>
+			<ion-item class="item item-divider">
+            </ion-item>
+			<ion-item class="item-icon-left" ng-click="about()">
+                关于途八哥
+                <i class="icon ion-ios-information-outline" style="font-size:1.5em;color:#15D4B5;"></i>
+            </ion-item>
+		</ion-list>
+    </div>
+  </ion-content>
+</ion-view>
