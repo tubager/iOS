@@ -1158,7 +1158,7 @@
 						messageAction: "<action></action>",
 						media: {
 							type: Wechat.Type.LINK,
-							webpageUrl: util.server+"pages/index.html?uuid=" + $scope.chat.uuid
+							webpageUrl: "http://host.tubager.com/pages/index.html?uuid=" + $scope.chat.uuid
 						}
 					},
 					scene: Wechat.Scene.TIMELINE   // share to Timeline
@@ -1180,7 +1180,7 @@
 						messageAction: "<action></action>",
 						media: {
 							type: Wechat.Type.LINK,
-							webpageUrl: util.server+"pages/index.html?uuid=" + $scope.chat.uuid
+							webpageUrl: "http://host.tubager.com/pages/index.html?uuid=" + $scope.chat.uuid
 						}
 					},
 					scene: Wechat.Scene.SESSION   // share to Timeline
